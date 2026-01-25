@@ -22,9 +22,9 @@ Predicted Attribute: Class of Iris Plant
 
 ## Getting Started
 
-<img src="getting_started/plots/sepal_length_v_petal_length.png" alt="X vs Y – Iris Dataset" width="300">
-<img src="getting_started/plots/sepal_width_v_petal_length.png" alt="X vs Y – Iris Dataset" width="300">
-<img src="getting_started/plots/sepal_width_v_petal_width.png" alt="X vs Y – Iris Dataset" width="300">
+<img src="e_getting_started/plots/sepal_length_v_petal_length.png" alt="X vs Y – Iris Dataset" width="300">
+<img src="e_getting_started/plots/sepal_width_v_petal_length.png" alt="X vs Y – Iris Dataset" width="300">
+<img src="e_getting_started/plots/sepal_width_v_petal_width.png" alt="X vs Y – Iris Dataset" width="300">
 
 
 ## Human Algorithm
@@ -50,19 +50,19 @@ From the summary tables and visualizations, it appeared that sepal width could i
 
 ### Confusion Matrix
 
-Accuracy: ?
+Accuracy: 86.67%
 
-| Actual \ Predicted | Class 1 | Class 2 | Class 3 |
-|-------------------|---------|---------|---------|
-| **Class 1**       |         |         |         |
-| **Class 2**       |         |         |         |
-| **Class 3**       |         |         |         |
+| Actual \\ Predicted | Iris-setosa | Iris-versicolor | Iris-virginica |
+|--------------------|-------------|------------------|----------------|
+| **Iris-setosa**     | 14          | 1                | 0              |
+| **Iris-versicolor** | 0           | 12               | 3              |
+| **Iris-virginica**  | 0           | 2                | 13             |
 
-One example where our algorithm worked well is when the inputs were ___, leading to a correct prediction of ___ because ___.
+One example where our algorithm worked well is when the inputs were clearly distinct, leading to a correct prediction of iris-setosa because the majority of these flowers had a petal length that was clearly shorter.
 
-An example where the algorithm did not perform as expected is when the inputs were ___, resulting in a prediction of ___ instead of ___, which may have happened because ___.
+An example where the algorithm did not perform as expected is when the petal lengths overlapped, resulting in a prediction of versicolor instead of virginica or vice-versa in a few cases. Specifically, a flower with a sepal width of 2.8mm and petal width of 1.5mm was classified by our algorithm as Iris-versicolor but should have been labeled as Iris-virginica.
 
-These examples of success and failure highlight patterns in the data or limitations in our rules, such as ___.
+These examples of success and failure highlight patterns in the data or limitations in our rules, such as the fact that there are some flowers with petal lengths that didn't perfectly fit our classification algorithm.
 
 <img width="315" height="334" alt="image" src="https://github.com/user-attachments/assets/23ee1e49-da76-47c2-97b8-c8fbcbef179c" />
 
